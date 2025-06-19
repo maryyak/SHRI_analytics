@@ -1,0 +1,90 @@
+.uploadInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    width: 330px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button.error {
+    background: #FF5F00;
+    color: white;
+}
+
+.button.uploaded{
+    background: #CB81FF;
+    color: #201B10;
+}
+
+.button.success{
+    background: #D4FAE6;
+    color: #201B10;
+}
+
+.input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.dropZone {
+    background: #EACDFF;
+    width: 100%;
+    padding: 60px 0;
+    border-radius: 40px;
+}
+
+.dropZone.dragOver {
+    background: #D4FAE6;
+}
+
+.dropZone.dropZoneError {
+    background: none;
+    border: 1px solid #FF5F00
+}
+
+.dropZone.dropZoneFile{
+    background: none;
+    border: 1px solid #201B10
+}
+
+.errorText {
+    color: #FF5F00;
+}
+
+.removeBtn {
+    background: #201B10;
+    padding: 0 20px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.uploadBtn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.spinner{
+    width: 50px;
+}
