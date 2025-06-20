@@ -1,12 +1,12 @@
 .spinner {
-    display: inline-block;            /* чтобы transform работал корректно */
-    animation: spinner 1s linear infinite;
-    transform-origin: center center;  /* центрировать трансформацию */
-    transform-box: fill-box;          /* использовать координаты содержимого SVG */
+  display: inline-block; /* чтобы transform работал корректно */
+  animation: spinner 1s linear infinite;
+  transform-origin: center center; /* центрировать трансформацию */
+  transform-box: fill-box; /* использовать координаты содержимого SVG */
 }
 
 @keyframes spinner {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }

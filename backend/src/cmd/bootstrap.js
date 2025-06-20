@@ -1,8 +1,8 @@
-import { fastify } from "fastify";
+import { fastify } from 'fastify';
 
-import { cors } from "./plugins/cors.js";
-import { multipart } from "./plugins/multipart.js";
-import { swagger } from "./plugins/swagger.js";
+import { cors } from './plugins/cors.js';
+import { multipart } from './plugins/multipart.js';
+import { swagger } from './plugins/swagger.js';
 
 export const withApp = (app) => (fn) => fn(app);
 

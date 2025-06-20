@@ -1,4 +1,4 @@
-import { buffy } from "./buffy.js";
+import { buffy } from './buffy.js';
 
 const MAX_DEVELOPER_ID = 10_000_000_000_000;
 const ERROR_CHANCE = 0.01;
@@ -44,10 +44,7 @@ export function createRecordGenerator({ withErrors, civs, maxSpend }) {
 
     let finalCiv = civ;
     if (shouldGenerateError()) {
-      finalCiv = Buffer.concat([
-        Buffer.from("unknown_"),
-        buffy.createRandomString(5),
-      ]);
+      finalCiv = Buffer.concat([Buffer.from('unknown_'), buffy.createRandomString(5)]);
     }
 
     recordId++;

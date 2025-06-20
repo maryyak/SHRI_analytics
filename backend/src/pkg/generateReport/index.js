@@ -1,6 +1,6 @@
-import { createRecordGenerator } from "./recordGenerator.js";
-import { ReadableStream } from "stream/web";
-import { Readable } from "stream";
+import { createRecordGenerator } from './recordGenerator.js';
+import { ReadableStream } from 'stream/web';
+import { Readable } from 'stream';
 
 /**
  * @param {Object} params

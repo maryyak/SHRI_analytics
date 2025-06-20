@@ -1,2 +1,1 @@
-export const cors = (fastify) =>
-  fastify.register(import("@fastify/cors"), { origin: "*" });
+export const cors = (fastify) => fastify.register(import('@fastify/cors'), { origin: '*' });

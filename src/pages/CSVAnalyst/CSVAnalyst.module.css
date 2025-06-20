@@ -1,71 +1,71 @@
 .description {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 110.00000000000001%;
-    letter-spacing: 0;
-    text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0;
+  text-align: center;
 }
 
-.description .bold{
-    font-weight: 700;
+.description .bold {
+  font-weight: 700;
 }
 
-.page{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-.sendBtn{
-    font-family: inherit;
-    border-radius: 25px;
-    padding: 15px 27px;
-    background: #2AE881;
-    width: fit-content;
-    border: none;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 110.00000000000001%;
-    letter-spacing: 0;
-    text-align: center;
-    color: #201B10;
-    cursor: pointer;
+.sendBtn {
+  font-family: inherit;
+  border-radius: 25px;
+  padding: 15px 27px;
+  background: #2ae881;
+  width: fit-content;
+  border: none;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #201b10;
+  cursor: pointer;
 }
 
-.sendBtn.disabled{
-    background: #C0C0C0;
-    color: #787878;
+.sendBtn.disabled {
+  background: #c0c0c0;
+  color: #787878;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 40px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 40px;
+  width: 100%;
 }
 
 .card {
-    background-color: white;
-    padding: 20px 0;
-    border-radius: 24px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
 }
 
 .value {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 
 .label {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
 }

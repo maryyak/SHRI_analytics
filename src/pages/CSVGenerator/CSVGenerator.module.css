@@ -1,0 +1,82 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.button {
+  font-family: inherit;
+  color: #201b10;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0;
+  text-align: center;
+  background: #2ae881;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 27px;
+}
+
+.button.error {
+  background: #ff5f00;
+  color: white;
+  border-radius: 10px;
+}
+
+.button.loading {
+  background: #cb81ff;
+  color: #201b10;
+  border-radius: 10px;
+  width: 360px;
+  height: 80px;
+  padding: 10px 0;
+}
+
+.button.success {
+  background: #d4fae6;
+  color: #201b10;
+  border-radius: 10px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.generateBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.removeBtn {
+  background: #201b10;
+  padding: 0 20px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.errorText {
+  color: #ff5f00;
+}
+
+.generateInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0;
+  text-align: center;
+}

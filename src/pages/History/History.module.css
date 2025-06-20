@@ -1,0 +1,127 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 2fr;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 16px 20px;
+  background: #cb81ff;
+  width: 100%;
+  height: 55px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #201b10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  justify-self: center;
+}
+
+.text:first-child {
+  justify-self: flex-start;
+}
+
+.text:last-child {
+  justify-self: flex-end;
+}
+
+.text.disabled {
+  opacity: 0.5;
+}
+
+.deleteBtn {
+  background: #ffffff;
+  width: 87px;
+  height: 87px;
+  border-radius: 20px;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.moreBtn {
+  font-family: inherit;
+  border-radius: 25px;
+  padding: 15px 27px;
+  background: #2ae881;
+  width: fit-content;
+  border: none;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #201b10;
+  cursor: pointer;
+}
+
+.clearBtn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0;
+  text-align: center;
+  color: white;
+  background: #201b10;
+  border-radius: 25px;
+  padding: 15px 27px;
+}
+
+.card {
+  background: #eacdff;
+  padding: 20px 0;
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.value {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+}

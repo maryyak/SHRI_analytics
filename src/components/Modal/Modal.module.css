@@ -1,0 +1,45 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 40px;
+  border-radius: 45px;
+  width: 1000px;
+  box-shadow: -6px 21px 100px 0 #00000059;
+  max-height: calc(100vh - 300px);
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.content {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.closeBtn {
+  background: #201b10;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modalInner {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
