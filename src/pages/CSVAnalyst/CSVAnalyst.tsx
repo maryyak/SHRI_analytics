@@ -14,6 +14,7 @@ const CsvAnalyst = () => {
     setStatus('parsing');
     setError(undefined);
 
+    let localError: string | undefined;
     let finalData: AggregateChunk | undefined;
 
     try {
@@ -22,19 +23,25 @@ const CsvAnalyst = () => {
         finalData = chunk;
       });
     } catch (e: unknown) {
-      const message = e instanceof Error ? e.message : typeof e === 'string' ? e : 'упс, не то...';
-      setError(message);
-      finalData = undefined;
+      localError =
+        e instanceof Error
+          ? e.message
+          : typeof e === 'string'
+            ? e
+            : 'Упс, не то...';
+      setError(localError);
     } finally {
-      setStatus('success');
+      const isError = !!localError;
 
-      if (finalData) {
+      setStatus(isError ? 'error' : 'success');
+
+      if (finalData || isError) {
         add({
-          id: new Date().toISOString(),
-          fileName: file.name,
-          date: new Date().toLocaleDateString(),
-          status: error ? 'error' : 'success',
-          data: finalData,
+          id:        new Date().toISOString(),
+          fileName:  file.name,
+          date:      new Date().toLocaleDateString(),
+          status:    isError ? 'error' : 'success',
+          data:      finalData,
         });
       }
     }

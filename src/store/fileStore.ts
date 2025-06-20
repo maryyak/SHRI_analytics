@@ -4,7 +4,7 @@ import type { AggregateChunk } from '../api/agregate.ts';
 interface FileState {
   file?: File;
   data?: AggregateChunk;
-  status?: 'parsing' | 'success';
+  status?: 'parsing' | 'success' | 'error';
   error?: string;
   setFile: (file?: File) => void;
   setStatus: (status: FileState['status']) => void;

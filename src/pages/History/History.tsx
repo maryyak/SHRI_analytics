@@ -22,7 +22,7 @@ export const History: React.FC = () => {
       <div className={styles.list}>
         {items.map((item) => (
           <div key={item.id} className={styles.item}>
-            <div className={styles.row} onClick={() => setSelectedItem(item)}>
+            <div className={`${styles.row} ${item.status === 'success' && styles.clickable}`} onClick={() => item.status === 'success' && setSelectedItem(item)}>
               <span className={styles.text}>
                 <svg
                   width="40"

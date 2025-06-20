@@ -23,12 +23,15 @@
   display: grid;
   grid-template-columns: 2fr 1fr 2fr 2fr;
   align-items: center;
-  cursor: pointer;
   border-radius: 40px;
   padding: 16px 20px;
   background: #cb81ff;
   width: 100%;
   height: 55px;
+}
+
+.row.clickable{
+  cursor: pointer;
 }
 
 .text {
