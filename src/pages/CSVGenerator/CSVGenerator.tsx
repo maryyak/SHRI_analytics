@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './CSVGenerator.module.css';
 import Spinner from '../../components/UI/Spinner/Spinner.tsx';
 import { generateReport } from '../../api/generate.ts';
@@ -13,7 +13,7 @@ const CsvGenerator = () => {
     setError(undefined);
 
     try {
-      await generateReport(0.01, 'off', '1000');
+      await generateReport(0.001, 'off', '200');
     } catch (e: unknown) {
       const msg = e instanceof Error ? e.message : 'упс, не то...';
       setError(msg);
@@ -29,7 +29,7 @@ const CsvGenerator = () => {
   };
 
   return (
-    <div className={styles.page}>
+    <div className={styles.page} data-testid='generate-page'>
       <span className={styles.description}>
         Сгенерируйте готовый csv-файл нажатием одной кнопки
       </span>
@@ -63,7 +63,7 @@ const CsvGenerator = () => {
           )}
         </div>
         {error ? (
-          <span className={styles.errorText}>{error}</span>
+          <span data-testid="error" className={styles.errorText}>{error}</span>
         ) : loading ? (
           <span>идёт процесс генерации</span>
         ) : isReady ? (

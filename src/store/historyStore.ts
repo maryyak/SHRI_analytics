@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import type { AggregateChunk } from '../api/agregate.ts';
 
-const STORAGE_KEY = 'history';
+export const STORAGE_KEY = 'history';
 
 export interface HistoryItem {
   id: string;

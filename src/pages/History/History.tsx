@@ -18,7 +18,7 @@ export const History: React.FC = () => {
   const highlights = getItemsFromAnalyticsData(selectedItem?.data);
 
   return (
-    <div className={styles.page}>
+    <div className={styles.page} data-testid="history-page">
       <div className={styles.list}>
         {items.map((item) => (
           <div key={item.id} className={styles.item}>
